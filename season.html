@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Garden Planner</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+   
+    <section class="header">
+      
+        <nav>
+            <img src="images/gardenlogo.png"><h1>Garden Planner</h1>
+            <div class="nav-links" id="navLinks">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+                <li><a href="planner.html">Garden Planner</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            </div>
+        </nav>
+        </section>
+        <main class="season">
+            <section id="seasonal-tasks">
+                <h2>Seasonal Tasks</h2>
+                <label for="seasonSelect">Select Season:</label>
+                <select id="seasonSelect">
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    <option value="fall">Fall</option>
+                    <option value="winter">Winter</option>
+                </select>
+                <button onclick="showTasks()">Show Tasks</button>
+                <div id="taskList"></div>
+            </section>
+            <section id="add-seasonal-task">
+                <h2>Add Seasonal Task</h2>
+                <label for="seasonTask">Task:</label>
+                <input type="text" id="seasonTask">
+                <label for="taskSeasonSelect">Season:</label>
+                <select id="taskSeasonSelect">
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    <option value="fall">Fall</option>
+                    <option value="winter">Winter</option>
+                </select>
+                <button onclick="addSeasonalTask()">Add Task</button>
+            </section>
+            <section id="seasonal-tasks-schedule">
+                <h2>Seasonal Tasks Schedule</h2>
+                <label for="taskDate">Date:</label>
+                <input type="date" id="taskDate">
+                <label for="scheduleTask">Task:</label>
+                <input type="text" id="scheduleTask">
+                <button onclick="addScheduleTask()">Add to Schedule</button>
+                <div id="scheduleList"></div>
+            </section>
+        </main>
+    
+    
+  </body>
+  </html>

@@ -1,0 +1,308 @@
+
+nav {
+    max-height:fit-content;
+    background-color: #59b517;
+    color:white;
+    display: flex;
+    align-items: center;  
+    padding: 2% 6%;
+    justify-content: space-between;
+   height: 8px;
+}
+nav img{
+   
+    width:40px;
+    border-radius: 50%;
+}
+nav h1{
+    font-size:25px ;
+    color: #fff;
+}
+.nav-links{
+    flex:1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+}
+.nav-links ul li::after{
+    content:'';
+    width:0%;
+    height: 2px;
+    background: yellow;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+.nav-links ul li:hover::after{
+    width:100%;
+}
+#home-img{
+    display:inline-block;
+    min-height: 100vh;
+    width:100%;
+    background-image: url(images/garden1.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;   
+    
+}
+.text-box{
+    width:90%;
+    color:white;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 25px;
+    color: white;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    color:black;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: rgb(158, 232, 10);
+    position: relative;
+    cursor: pointer;
+}
+.btn:hover{
+    border: 1px solid #b1e409;
+    background: yellow;
+    transition: 1s;
+}
+/* forms style */
+.login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.login h2{
+    margin-bottom: 50px;
+}
+form {
+  
+    background-color: white;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px black;
+    max-width: 400px;
+    margin: 15px auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #45a049;
+}
+
+/*about style*/
+.about-img{
+    display:inline-block;
+    min-height: 100vh;
+    width:100%;
+    background-image: url(images/image.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;   
+align-items: center;
+}
+.about-div{
+   width:1000px;
+   margin-left:250px;
+    margin-top: 5px;
+    flex-basis:31% ;
+    background: white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding:  20px 12px ;
+    box-sizing: border-box;
+    transition: 0.5s;
+    
+}
+
+main h2 {
+    margin-bottom: 10px;
+}
+
+main ul {
+    padding-left: 20px;
+}
+
+main ul li {
+    margin-bottom: 10px;
+}
+
+main section:last-child {
+    margin-bottom: 0;
+}
+.about2{
+    width: 1000px;
+    margin-left: 250px;
+    margin-top: 5px;
+    flex-basis:31% ;
+    background:white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding:  20px 12px ;
+    box-sizing: border-box;
+    transition: 0.5s;
+
+}
+/* -----planner styles----*/
+.plan-img{
+    display:inline-block;
+    min-height: 100vh;
+    width:100%;
+    background-image: url(images/garden2.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;   
+align-items: center;
+}
+ .pla1{
+    width: 1000px;
+    margin-left: 250px;
+    margin-top: 5px;
+    flex-basis:31% ;
+    background:transparent;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding:  20px 12px ;
+    box-sizing: border-box;
+    transition: 0.5s;
+    text-align: center;
+}
+ .pla1 h2{
+    color: white;
+    font-size: 50px;
+ }
+ .pla1 p{
+    color: white;
+    font-size: 25px;
+ }
+ .pla2{
+    width: 1000px;
+    margin-left: 250px;
+    margin-top: 5px;
+    flex-basis:31% ;
+    background:white;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    padding:  20px 12px ;
+    box-sizing: border-box;
+    transition: 0.5s;
+    text-align: center;
+}
+ .pla2 h2,p{
+    color: black;
+ }
+ /* Seasonal Tasks Styles */
+#taskList ul {
+    padding-left: 20px;
+}
+
+#taskList li {
+    margin-bottom: 5px;
+}
+
+/* Add Seasonal Task Styles */
+#add-seasonal-task {
+    margin-top: 20px;
+}
+
+#add-seasonal-task label {
+    display: block;
+    margin-top: 10px;
+}
+
+#add-seasonal-task input,
+#add-seasonal-task select,
+#add-seasonal-task button {
+    margin-top: 5px;
+}
+
+/* Seasonal Tasks Schedule Styles */
+#seasonalSchedule div {
+    margin-bottom: 10px;
+}
+.season{
+    text-align: center;
+  
+}
+/*plants*/
+*{
+    box-sizing: border-box;
+}
+.plat{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+.plants::-webkit-textfield-decoration-container{
+   content: "";
+   display: table;
+   clear: both;
+}
+/*video*/
+*{
+    box-sizing: border-box;
+}
+.vid{
+    float: left;
+    width: 33.33%;
+    padding: 5px;
+}
+.video::-webkit-textfield-decoration-container{
+   content: "";
+   display: table;
+   clear: both;
+}
